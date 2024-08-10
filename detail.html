@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lex Pokedex Details</title>
+  <link rel="stylesheet" href="main.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="./detailscript.js" defer></script>
+</head>
+
+<body>
+  <main class="main detail-main">
+    <header class="header">
+      <div class="header-wrapper">
+        <div class="wrap-head">
+          <a href="./index.html" class="back-btn-wrap">
+            <img src="./assets/back-to-home.svg" alt="back icon" class="back-btn" id="back-btn">
+          </a>
+          <div class="name-wrap">
+            <p class="h1 name"></p>
+
+          </div>
+        </div>
+
+        <div class="pokemon-id-wrap">
+          <p class="fonts-body2"></p>
+        </div>
+      </div>
+    </header>
+    <div class="feat-img">
+      <a href="#" class="arrow left-arrow " id="leftArrow">
+        <img src="./assets/chevron_left.svg" alt="back">
+      </a>
+      <div class="detail-img-wrapper">
+        <img src="" alt="">
+      </div>
+      <a href="#" class="arrow right-arrow" id="rightArrow">
+        <img src="./assets/chevron_right.svg" alt="forward">
+      </a>
+    </div>
+    <div class="detail-card-detail-wrapper">
+      <div class="power-wrapper">
+        <p class="fonts-body3 type grass"></p>
+        <p class="fonts-body3 type poison"></p>
+      </div>
+      <p class="fonts-body2 about-text">About</p>
+      <div class="pokemon-detail-wrapper">
+        <div class="wrap-pokemon-detail">
+          <div class="pokemon detail">
+            <img src="./assets/weight.svg" alt="weight">
+            <p class="fonts-body3 weight"></p>
+          </div>
+          <p class="fonts-caption">Weight</p>
+        </div>
+        <div class="wrap-pokemon-detail">
+          <div class="pokemon detail">
+            <img src="./assets/height.svg" alt="height" class="straighten">
+            <p class="fonts-body3 height"></p>
+          </div>
+          <p class="fonts-caption">Height</p>
+        </div>
+        <div class="wrap-pokemon-detail">
+          <div class="pokemon detail move"></div>   
+          <p class="fonts-caption">Move</p>       
+        </div>
+        
+      </div>
+      <p class="fonts-body3 pokemon-description"></p>
+      <p class="fonts-body2 about-text">Base Stats</p>
+      <div class="stats-wrapper">
+        <div class="wrap-stats" data-stat="HP">
+          <p class="fonts-body3 stats">HP</p>
+          <p class="fonts-body3"></p>
+          <progress value="" max="100" class="progress-bar"></progress>
+        </div>
+        <div class="wrap-stats" data-stat="ATK">
+          <p class="fonts-body3 stats">ATK</p>
+          <p class="fonts-body3"></p>
+          <progress value="" max="100" class="progress-bar"></progress>
+        </div>
+        <div class="wrap-stats" data-stat="DEF">
+          <p class="fonts-body3 stats">DEF</p>
+          <p class="fonts-body3"></p>
+          <progress value="" max="100" class="progress-bar"></progress>
+        </div>
+        <div class="wrap-stats" data-stat="SATK">
+          <p class="fonts-body3 stats">SATK</p>
+          <p class="fonts-body3"></p>
+          <progress value="" max="100" class="progress-bar"></progress>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/pokedex.svg" alt="pokedex" class="details-bg">
+  </main>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
