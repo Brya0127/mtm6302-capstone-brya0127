@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lex Pokedex</title>
+     <link rel="stylesheet" href="">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="./pokemon.js" defer></script>
+</head>
+<body>
+    <main class="main">
+      <header class="head-home">
+        <div class="container">
+          <div class="wraplogo">
+            <img src="./assets/pokeball.svg" alt="pokeball symbol">
+            <p class="h1">Pokedex</p>
+          </div>
+          <div class="search-wrapper">
+            <div class="wrap-search">
+              <img src="./assets/search.svg" alt="search icon" class="search-icon">
+              <input type="text" class="search-input fonts-body3" placeholder="Search" id="search-input">
+              <img src="./assets/cross.svg" alt="cross icon" class="close-search-icon" id="close-search-icon">
+            </div>
+          </div>
+
+          <div class="sort-wrapper">
+            <div class="wrap-sort">
+              <img src="./assets/sorting.svg" alt="sort icon" class="sort-icon" id="sort-icon">
+            </div>
+            <div class="filter-wrapper">
+              <p class="fonts-body2">Sort by:</p>
+              <div class="filter-wrap">
+                <div>
+                  <input type= "radio" id="number" name="filters" value="number" checked>
+                  <label for="number" class="fonts-body3">Number</label>
+                </div>
+                <div>
+                  <input type="radio" id="name" name="filters" value="name">
+                  <label for="name" class="fonts-body3">Name</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <section class="pokemon-list">
+        <div class="container">
+          <div class="list-wrapper"></div>
+        </div>
+        <div class="not-found">Pokemon Not Found...</div>
+      </section>
+    </main>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
